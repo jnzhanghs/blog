@@ -96,24 +96,24 @@
 
 
 
-  <meta name="description" content="最近工作中遇到一些问题，进行了思考，并且的到了某些结论，今天在这里记录一下。  起因过年前，遇到了高速串行输入信号无法通过一个单通道环路实现锁相环路的问题，对我来说是个新问题，查了很多资料，有不少前辈在这方面做了很多工作，但是每个人工作中遇到的问题是不一样的，有不同的背景，因此解决问题的思路也有很多不同。 FPGA不可能实现对一个输入速率高达1Gsps的信号的直接串行环路锁定，锁相环路能工作的最高">
+  <meta name="description" content="一天乱糟糟的，上班都不知时间怎么过去的。 一上班就收到一个反馈问题早上刚到单位收到用户要求设计国产化方案，吃早点写会代码；之前给总体设计的用Xilinx器件，领导当时说就按进口的搞，结果总体看了方案回复的第一个问题就是国产化，只能硬把这个坑圆过去，说功能上都有国产化替代方案，没有Pin2Pin的。 十点上楼办报销，回邮件写关键技术；刘总还挺惦记我，本来宇航没说关键技术有我啥事，结果要把我这块加上去">
 <meta property="og:type" content="article">
-<meta property="og:title" content="最近关于并行锁相环的思考">
-<meta property="og:url" content="http://blog.jnzhang.ml/2019/03/05/AnIdeaRecently/index.html">
+<meta property="og:title" content="一天流水帐">
+<meta property="og:url" content="http://blog.jnzhang.ml/2019/11/20/一天流水帐/index.html">
 <meta property="og:site_name" content="纪念章">
-<meta property="og:description" content="最近工作中遇到一些问题，进行了思考，并且的到了某些结论，今天在这里记录一下。  起因过年前，遇到了高速串行输入信号无法通过一个单通道环路实现锁相环路的问题，对我来说是个新问题，查了很多资料，有不少前辈在这方面做了很多工作，但是每个人工作中遇到的问题是不一样的，有不同的背景，因此解决问题的思路也有很多不同。 FPGA不可能实现对一个输入速率高达1Gsps的信号的直接串行环路锁定，锁相环路能工作的最高">
+<meta property="og:description" content="一天乱糟糟的，上班都不知时间怎么过去的。 一上班就收到一个反馈问题早上刚到单位收到用户要求设计国产化方案，吃早点写会代码；之前给总体设计的用Xilinx器件，领导当时说就按进口的搞，结果总体看了方案回复的第一个问题就是国产化，只能硬把这个坑圆过去，说功能上都有国产化替代方案，没有Pin2Pin的。 十点上楼办报销，回邮件写关键技术；刘总还挺惦记我，本来宇航没说关键技术有我啥事，结果要把我这块加上去">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-05T02:39:34.000Z">
+<meta property="og:updated_time" content="2019-11-20T08:55:13.797Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="最近关于并行锁相环的思考">
-<meta name="twitter:description" content="最近工作中遇到一些问题，进行了思考，并且的到了某些结论，今天在这里记录一下。  起因过年前，遇到了高速串行输入信号无法通过一个单通道环路实现锁相环路的问题，对我来说是个新问题，查了很多资料，有不少前辈在这方面做了很多工作，但是每个人工作中遇到的问题是不一样的，有不同的背景，因此解决问题的思路也有很多不同。 FPGA不可能实现对一个输入速率高达1Gsps的信号的直接串行环路锁定，锁相环路能工作的最高">
+<meta name="twitter:title" content="一天流水帐">
+<meta name="twitter:description" content="一天乱糟糟的，上班都不知时间怎么过去的。 一上班就收到一个反馈问题早上刚到单位收到用户要求设计国产化方案，吃早点写会代码；之前给总体设计的用Xilinx器件，领导当时说就按进口的搞，结果总体看了方案回复的第一个问题就是国产化，只能硬把这个坑圆过去，说功能上都有国产化替代方案，没有Pin2Pin的。 十点上楼办报销，回邮件写关键技术；刘总还挺惦记我，本来宇航没说关键技术有我啥事，结果要把我这块加上去">
 
 
 
 
 
 
-  <link rel="canonical" href="http://blog.jnzhang.ml/2019/03/05/AnIdeaRecently/">
+  <link rel="canonical" href="http://blog.jnzhang.ml/2019/11/20/一天流水帐/">
 
 
 
@@ -123,7 +123,7 @@
   };
 </script>
 
-  <title>最近关于并行锁相环的思考 | 纪念章</title>
+  <title>一天流水帐 | 纪念章</title>
   
 
 
@@ -309,7 +309,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.jnzhang.ml/2019/03/05/AnIdeaRecently/">
+    <link itemprop="mainEntityOfPage" href="http://blog.jnzhang.ml/2019/11/20/一天流水帐/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jianing Zhang">
@@ -326,7 +326,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">最近关于并行锁相环的思考
+          <h1 class="post-title" itemprop="name headline">一天流水帐
 
               
             
@@ -352,7 +352,7 @@
                 
               
 
-              <time title="Created: 2019-03-05 10:12:27 / Modified: 10:39:34" itemprop="dateCreated datePublished" datetime="2019-03-05T10:12:27+08:00">2019-03-05</time>
+              <time title="Created: 2019-11-20 16:42:54 / Modified: 16:55:13" itemprop="dateCreated datePublished" datetime="2019-11-20T16:42:54+08:00">2019-11-20</time>
             
 
             
@@ -391,14 +391,21 @@
       
 
       
-        <p>最近工作中遇到一些问题，进行了思考，并且的到了某些结论，今天在这里记录一下。</p>
-<hr>
-<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>过年前，遇到了高速串行输入信号无法通过一个单通道环路实现锁相环路的问题，对我来说是个新问题，查了很多资料，有不少前辈在这方面做了很多工作，但是每个人工作中遇到的问题是不一样的，有不同的背景，因此解决问题的思路也有很多不同。</p>
-<p>FPGA不可能实现对一个输入速率高达1Gsps的信号的直接串行环路锁定，锁相环路能工作的最高频率也无法达到信号速率的一半，这种条件下难以直接对信号进行锁相。</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>因此在处理过程中必须考虑以空间换时间的思路，处理时间不能满足要求，那就增加布线面积以达到提速的目的。事实上大家也都是这么做的，有很多行业内的专家在这方面都有研究，并且形成了不少论文，读完后经过仿真，能发现他们的方法并不能完全解决我的问题，由于项目进度较紧，没有时间对问题进行深入分析。在前人基础上，另起炉灶，找到自己的方法，仿真迭代，能够找到有效的解决路径。</p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>并行处理，意味着需要将原有的串行信号DeMux，项目中使用了三路并行的方法进行设计，既然3路并行，那就必须有三个VCO，三个VCO输入相位不同，输出自然不同，各自进行鉴相、环路滤波、再将相位送入VCO中开始下一周期，每一个步骤都需要独立进行，这样一来，将一个锁相环路变为了三个相关的锁相环路，占用资源变为3倍，同频率下处理速度变为三倍。能够很好的实现高速信号的环路锁定。</p>
-<h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2><p>在Matlab上进行验证，将原本的单通道锁相环程序改为多输入锁相环，其余参数不变，中间调试过程不提，验证结果显示完全能够实现相位锁定。</p>
-<h6 id="Tips-整个环路的关键在于并行滤波，在FPGA实现中很麻烦。具体做法就不说了，刚写了个专利，等受理。"><a href="#Tips-整个环路的关键在于并行滤波，在FPGA实现中很麻烦。具体做法就不说了，刚写了个专利，等受理。" class="headerlink" title="Tips  整个环路的关键在于并行滤波，在FPGA实现中很麻烦。具体做法就不说了，刚写了个专利，等受理。"></a>Tips  整个环路的关键在于并行滤波，在FPGA实现中很麻烦。具体做法就不说了，刚写了个专利，等受理。</h6>
+        <p>一天乱糟糟的，上班都不知时间怎么过去的。</p>
+<h3 id="一上班就收到一个反馈问题"><a href="#一上班就收到一个反馈问题" class="headerlink" title="一上班就收到一个反馈问题"></a>一上班就收到一个反馈问题</h3><p>早上刚到单位收到用户要求设计国产化方案，吃早点写会代码；之前给总体设计的用Xilinx器件，领导当时说就按进口的搞，结果总体看了方案回复的第一个问题就是国产化，只能硬把这个坑圆过去，说功能上都有国产化替代方案，没有Pin2Pin的。</p>
+<h3 id="十点上楼办报销，回邮件写关键技术；"><a href="#十点上楼办报销，回邮件写关键技术；" class="headerlink" title="十点上楼办报销，回邮件写关键技术；"></a>十点上楼办报销，回邮件写关键技术；</h3><p>刘总还挺惦记我，本来宇航没说关键技术有我啥事，结果要把我这块加上去，不过也不错，对我挺好，写这个倒是不费事。</p>
+<h3 id="十一点联系宇航给程序刻盘。"><a href="#十一点联系宇航给程序刻盘。" class="headerlink" title="十一点联系宇航给程序刻盘。"></a>十一点联系宇航给程序刻盘。</h3><p>昨天早上去看他们的产品故障，发现是由于采样定理不理解，写代码就没考虑相位连续的问题。当然，指出他们的问题不代表他们就能解决，下午给他们写了两个版本的程序，在Matlab上做好了测试，结果人家爱还挺忙没时间测。</p>
+<h3 id="中午吃饭睡一觉；"><a href="#中午吃饭睡一觉；" class="headerlink" title="中午吃饭睡一觉；"></a>中午吃饭睡一觉；</h3><p>睡了四十分钟，有点腰疼。</p>
+<h3 id="一点联系浙大了解国产器件进展，写一会代码；"><a href="#一点联系浙大了解国产器件进展，写一会代码；" class="headerlink" title="一点联系浙大了解国产器件进展，写一会代码；"></a>一点联系浙大了解国产器件进展，写一会代码；</h3><p>浙大的老师还是两年前报预研的时候联系过的，当初刚流片出来，结果人家现在芯片都已经量产两轮了，我还是没有任何成就，没挣钱没业绩。</p>
+<h3 id="三点上楼送光盘文件标密"><a href="#三点上楼送光盘文件标密" class="headerlink" title="三点上楼送光盘文件标密"></a>三点上楼送光盘文件标密</h3><p>跟杨老师电话沟通年底考核内容，列项目内容，细数了一下感觉今年所里就没干啥活，工作量就靠HY硬撑，还好大领导给面子；</p>
+<h3 id="四点半，快下班了"><a href="#四点半，快下班了" class="headerlink" title="四点半，快下班了"></a>四点半，快下班了</h3><p>不知道今天干了个啥，有啥成果？<br>思路不停的断，代码写了不到五十行，国产化方案还没头绪。</p>
+<h3 id="吐个槽"><a href="#吐个槽" class="headerlink" title="吐个槽"></a>吐个槽</h3><p>昨天中午开始给宇航写的程序，今天他们还没时间测，约好明早去测，这个节奏难怪这项目干了五年还没干完。上周四就开始催他们搭平台，跟我说周末可以复现故障，结果到周一都没能给我看；</p>
+<p>收到一个陶老汉给的测试系统的方案，安排做ADC、485控制，大概看了一下应该不是太复杂，但是安排得尽量安排时间做。</p>
+<p>明天早上跟宇航测试程序，下午去西电跟刘老师交流跳频同步方案，上月安排的原理图还没改，得赶紧弄。</p>
+<p>乱糟糟的，昨晚本来想晚上回家再写一会，结果给花生找了一个小时奶粉，回家陪她玩一会睡觉时候都快十点了，也没啥精力再去写东西了。</p>
+<p>希望时间能多一点，我的效率能高一点。</p>
+<p>再这么下去，月底活得把我埋了。</p>
+
       
     </div>
 
@@ -428,15 +435,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/04/01/AIAndGarbages/" rel="next" title="人工智障与信息垃圾">
+                <i class="fa fa-chevron-left"></i> 人工智障与信息垃圾
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/22/Ideas-About-Alimeter/" rel="prev" title="最近两周的思考">
-                最近两周的思考 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -545,7 +552,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#起因"><span class="nav-number">1.</span> <span class="nav-text">起因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分析"><span class="nav-number">2.</span> <span class="nav-text">分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">3.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#验证"><span class="nav-number">4.</span> <span class="nav-text">验证</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Tips-整个环路的关键在于并行滤波，在FPGA实现中很麻烦。具体做法就不说了，刚写了个专利，等受理。"><span class="nav-number">4.0.0.0.1.</span> <span class="nav-text">Tips  整个环路的关键在于并行滤波，在FPGA实现中很麻烦。具体做法就不说了，刚写了个专利，等受理。</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一上班就收到一个反馈问题"><span class="nav-number">1.</span> <span class="nav-text">一上班就收到一个反馈问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十点上楼办报销，回邮件写关键技术；"><span class="nav-number">2.</span> <span class="nav-text">十点上楼办报销，回邮件写关键技术；</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十一点联系宇航给程序刻盘。"><span class="nav-number">3.</span> <span class="nav-text">十一点联系宇航给程序刻盘。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中午吃饭睡一觉；"><span class="nav-number">4.</span> <span class="nav-text">中午吃饭睡一觉；</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一点联系浙大了解国产器件进展，写一会代码；"><span class="nav-number">5.</span> <span class="nav-text">一点联系浙大了解国产器件进展，写一会代码；</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三点上楼送光盘文件标密"><span class="nav-number">6.</span> <span class="nav-text">三点上楼送光盘文件标密</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四点半，快下班了"><span class="nav-number">7.</span> <span class="nav-text">四点半，快下班了</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#吐个槽"><span class="nav-number">8.</span> <span class="nav-text">吐个槽</span></a></li></ol></div>
             
 
           </div>
